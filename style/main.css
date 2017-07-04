@@ -6,19 +6,24 @@ li{
     list-style: none;
 }
 .header {
-        
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 1px 0px #e6e9ed;
 }
 .header .bg_social{
     width: 100%;
     background-color: #f5f7fa;
+    box-shadow: 0px 1px 0px #e6e9ed;
 }
 .header .bg_social .navbar_social {
-    width: 75%;
+    width: 1170px;
     margin: 0 auto;
+    height: 40px;
 }
 .header .bg_social .navbar_social figure{
     display: inline-block;
     padding: 10px;
+    padding-left: 0;
     
 }
 .header .bg_social .navbar_social figure .figcaption{
@@ -26,6 +31,15 @@ li{
     padding:0;
     display: inline-block;
     color:#8494a6;
+    font-size: 12px;
+}
+.header .bg_social .navbar_social figure .mail_size{
+    height:8px;
+    width: 11px;
+}
+.phone_size {
+    height:13px;
+    width: 7px;
 }
 .header .bg_social .navbar_social ul li {
     display: inline-block;
@@ -35,33 +49,106 @@ li{
 }
 .header .bg_social .navbar_social ul li a img  {
     display: inline-block;   
-    height: 15px;
-    padding:10px;
+    height: 11px;
+    padding:15px;
     
     
 }
 .header .main_navbar{
-    width: 75%;
+    width: 1170px;
+    height: 111px;
     background-color: #ffffff;
     margin: 0 auto;
+    clear: both;
+    
 }
 .header .main_navbar figure{
     width: 100px;
     display: inline-block;
 }
 .header .main_navbar figure img{
-    padding:20px 0px;
+    padding-top:36px;
+    padding-left:0;
+    padding-bottom:26px;
+    height: 40px;
+    width: 161px;    
 }
 .header .main_navbar ul{
-      float:right;
+    float:right;
 }
 .header .main_navbar ul li{
-    display: inline-block;
+    display: inline-block;   
 }
 .header .main_navbar ul li a{
     display: inline-block;
-    padding:20px;
-    padding-top:30px;
+    padding:52px 22px 49px 22px;
     color:#506a85;
     text-decoration: none;
+    font-size:15px;
+    
+}
+.slider{
+    background-image: url("../images/slider_01.png");
+    background-repeat: no-repeat;
+    height: 880px;
+    
+}
+.about{
+    padding-top:129px;
+    color:#73879c;
+    height: 670px;
+}
+.about .who_we_are {
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size:44px;
+    font-weight: bold;
+}
+.about .who_we_are .lorem{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size:22px !important;
+    padding-top: 42px;
+    line-height: 34px;
+    color:#8897a8;
+}
+.about .advantages{
+    width:1162px;
+    margin:0 auto;
+    
+}
+.about .position_adv{
+    width: 100%;
+    margin:0 auto;
+    padding-top: 84px;
+}
+.ad_1, .ad_2, .ad_3{
+    width:364px;
+    margin:0 auto;
+    display: inline-block;
+    position: relative;
+    
+}
+.advantages .titles{
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2;
+    font-family:'Lato', sans-serif;
+    height: 30px;
+    padding-left:78px;
+}
+.advantages .titles::before{
+    content:url(../images/ball_icon.png);
+    position: absolute;
+    left:0;
+    
+}
+.advantages .small_lorem{
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 30px;
+    padding-left:78px;
+    
 }

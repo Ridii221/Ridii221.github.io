@@ -3,66 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link rel="stylesheet" href="style/main.css">
     <title>
-        REEN training page
+            REEN training page
     </title>
 </head>
 <body>
    <header class="header">
        <div class="bg_social">
             <nav class="navbar_social">
-                   <figure>
-                        <img class="mail_size" src="images/mail_icon.png" alt="mail icon">
-                        <figcaption class="figcaption">info@reen.com</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="phone_size" src="images/phone_icon.png" alt="phone icon">
-                        <figcaption class="figcaption">
-                            +00(123)456 78 90
-                        </figcaption> 
-                    </figure>             
+                   <p class="figcaption">
+                        <a class="mail" href="#">
+                           <i class="fa fa-envelope-o" aria-hidden="true">
+                           </i>
+                            info@reen.com
+                        </a>
+                    </p>
+                    <p class="figcaption">
+                        <a class="phone" href="#">
+                               <i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
+                                +00(123)456 78 90
+                        </a> 
+                    </p>             
                     <ul>
                         <li>
-                            <a href="#">
-                                <img src="images/fb_icon.png" alt="facebook icon">
+                            <a class="fb" href="#">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="images/gplus_icon.png" alt="google plus icon">
+                            <a class="gplus" href="#">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="images/twit_icon.png" alt="twitter icon">
+                            <a class="twit" href="#">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="images/p_icon.png" alt="picassa icon">
+                            <a class="pica" href="#">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="images/be_icon.png" alt="be icon">
+                            <a class="be" href="#">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="images/ball_icon.png" alt="ball icon">
+                            <a class="ball" href="#">
                             </a>
                         </li>
                     </ul>
             </nav>
         </div>
         <nav class="main_navbar"> 
-               <figure>
-                   <img src="images/logo.png" alt="logo REEN">
-               </figure>
-               <ul>
+               <a href="#" class="logo">
+                   </a>
+               <ul class="ul_hover">
                    <li>
                        <a href="#">HOME</a>
                    </li>
@@ -90,6 +87,34 @@
         </nav>
     </header>
     <section class="slider">
+        <figure>
+            <a class="left_arrow" href="#">
+            </a>
+            <a class="right_arrow" href="#">
+            </a>
+            <div class="pagination">
+                <a href="#">
+                    <div class="pagi_size pagi_01">
+                    </div>
+                </a>    
+                <a href="#">
+                    <div class="pagi_size pagi_02">
+                    </div>
+                </a>    
+                <a href="#">
+                    <div class="pagi_size pagi_03">
+                    </div>
+                </a>   
+                <a href="#">
+                    <div class="pagi_size pagi_04">
+                    </div>
+                </a>   
+                <a href="#">
+                    <div class="pagi_size pagi_05">
+                    </div>
+                </a>
+            </div>
+        </figure>
     </section>
     <section class="about">
         <div class="who_we_are">
@@ -101,8 +126,7 @@
                 beautiful website in no time. It's fully responsive and
                 will adapt itself to any mobile device. iPad, iPhone,
                 Android, it doesn't matter. Your content will always
-                looks its absolute best.
-                  
+                looks its absolute best.       
            </p> 
         </div>
         <div class="advantages">
@@ -156,7 +180,9 @@
                 re porem aut labor.
             </p>
             <figure class="first border_figcaption">
-                <img src="images/last_work_1.png" alt="our last work">
+               <div class="background">
+                    <img class="pictures" src="images/last_work_1.png" alt="our last work">
+                </div>
                 <figcaption>
                     <p class="main_figcaption">
                         Grand Motel gets an identity brushup
@@ -167,7 +193,9 @@
                 </figcaption>
             </figure>
             <figure class="border_figcaption">
-                <img src="images/last_work_2.png" alt="our second last work">
+                <div class="background">
+                    <img class="pictures" src="images/last_work_2.png" alt="our second last work">
+                </div>
                 <figcaption>
                    <p class="main_figcaption">
                        Fresh branding for a creative startup
@@ -200,25 +228,102 @@
     <footer class="footer">
         <div class="footer_01">
             <div class="footer_position">
-                <div class="who size_boxes">
-                    s
+                <div class="size_boxes">
+                    <p class="footer_title">
+                        Who we are
+                    </p>
+                    <figure>
+                        <img class="logo_white" src="images/logo_white.png">
+                    </figure>
+                    <p class="footer_discription">
+                        Magnis modipsae voloratati andigen daepeditem
+                        quiate re porem que aut labor. Laceaque
+                        eictemperum quiae sitiorem rest non
+                        restibusaes maio es dem tumquam.      
+                    </p>
+                    <p class="footer_discription about_bold">
+                        <a href="#">
+                            More about us
+                        </a>
+                    </p>
                 </div>
                 <div class="late size_boxes">
-                    s
+                    <p class="footer_title">
+                        Latest works
+                    </p>
+                    <figure class="small_last">
+                        <img src="images/small_last_01.png">
+                        <img src="images/small_last_02.png">
+                        <img src="images/small_last_03.png">
+                        <img src="images/small_last_04.png">
+                    </figure>
                 </div>
                 <div class="getIn size_boxes">
-                    s
+                    <p class="footer_title">
+                        Get in touch
+                    </p>
+                    <p class="footer_discription padding_bot">
+                        Doloreiur quia commolu ptatemp dolupta
+                        oreprerum tibusam eumenis et consent
+                        accullignis dentibea autem inisita.     
+                    </p>
+                    <p class="localisation footer_discription">
+                        84 Street, City, State 24813
+                    </p>
+                    <p class="phone footer_discription">
+                        +00 (123) 456 78 90
+                    </p>
+                    <p class="mail footer_discription">
+                        info@reen.com
+                    </p>
                 </div>
                 <div class="update size_boxes">
-                    s
+                    <p class="footer_title">
+                        Free updates
+                    </p>
+                    <p class="footer_discription padding_bot">
+                        Conecus iure posae volor remped modis 
+                        aut lor volor accabora incim resto explabo.
+                    </p>
+                    <form class="subscribe">
+                        <input type="email" class="email_place" name="email" placeholder="Enter your email address">
+                        <input type="image" class="button_subscribe" src="images/button_subscribe.png" alt="subscribe button">
+                    </div>
                 </div>
             </div>
         </div>
-        <nav class="footer_02">
+        <div class="footer_02">
             <div class="footer_position">
-                
+                <p class="copy_right">
+                    © 2014 REEN. All rights reserved.
+                </p>
+                <nav class="footer_menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+            <a href="#" class="up_arrow">
+                <img src="images/up_arrow.png">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

@@ -2,14 +2,32 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <title>
+            REEN training page
+    </title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link rel="stylesheet" href="style/main.css">
-    <title>
-            REEN training page
-    </title>
+    <script>
+    
+    window.onscroll = function() {
+        var position;
+        var stick = document.getElementById('container');
+        position = window.pageYOffset;
+        if(position >= 40){
+            stick.style.boxShadow = "0px 5px 15px #e5e5e5";
+        }
+        else{
+            stick.style.boxShadow="0px 1px 0px #e6e9ed";
+        }
+    };
+    var slide = document.getElementsByClassName("slider");
+    var right_slide = function(){
+        slide.style.offsetLeft="-200%";
+    }
+    </script>
 </head>
 <body>
    <header class="header">
@@ -56,42 +74,269 @@
                     </ul>
             </nav>
         </div>
-        <nav class="main_navbar"> 
-               <a href="#" class="logo">
-                   </a>
-               <ul class="ul_hover">
-                   <li>
-                       <a href="#">HOME</a>
-                   </li>
-                   <li>
-                       <a href="#">PORTFOLIO</a>
-                   </li>
-                   <li>
-                       <a href="#">BLOG</a>
-                   </li>
-                   <li>
-                       <a href="#">PAGES</a>
-                   </li>
-                   <li>
-                       <a href="#">FEATURES</a>
-                   </li>
-                   <li>
-                       <a href="#">MEGA MENU</a>
-                   </li>
-                   <li>
-                       <a href="#">CONTACT</a>
-                   </li>
-                   
-               </ul>
-            
-        </nav>
-    </header>
+           </header>
+               <div class="container_sticky" id="container">
+                    <div class="main_navbar"> 
+                            <a href="#" class="logo">
+                            </a>
+                           <ul>
+                               <li class="home_menu">
+                                   <a href="#">
+                                          HOME
+                                    </a>
+                                       <ul class="home">
+                                           <li>
+                                              <a href="#">
+                                                  <p>
+                                                       AGENCY STYLE
+                                                  </p>
+                                               </a>
+                                           </li>
+                                           <li>
+                                              <a href="#">
+                                                  <p>
+                                                       PRODUCT STYLE
+                                                  </p>
+                                               </a>
+                                           </li>
+                                           <li>
+                                              <a href="#">
+                                                  <p>
+                                                       SERVICE STYLE
+                                                  </p>
+                                               </a>
+                                           </li>
+                                           <li>
+                                              <a href="#">
+                                                  <p>
+                                                       PORTFOLIO STYLE
+                                                  </p>
+                                               </a>
+                                           </li>
+                                           <li>
+                                              <a href="#">
+                                                  <p>
+                                                       SHOWCASE STYLE
+                                                  </p>
+                                               </a>
+                                           </li>
+                                       </ul>
+                               </li>
+                               <li>
+                                   <a href="#">PORTFOLIO</a>
+                               </li>
+                               <li>
+                                   <a href="#">BLOG</a>
+                               </li>
+                               <li>
+                                   <a href="#">PAGES</a>
+                               </li>
+                               <li>
+                                   <a href="#">FEATURES</a>
+                               </li>
+                               
+                               <li class="menu">
+                                   <a href="#">
+                                       MEGA MENU
+                                   </a> 
+                                   <div class="mega_menu">
+                                      <div class="box first_box">
+                                          <p class="title_menu">
+                                              Focus on
+                                          </p>
+                                          <figure class="small_background">
+                                                    <img src="images/carousel_04.png">
+                                          </figure>
+                                          <p class="small_lorem">
+                                              Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.
+                                          </p>
+                                          <button class="button_project">
+                                              VIEW PROJECT
+                                          </button>
+                                      </div>
+                                      <div class="box">
+                                          <p class="title_menu">
+                                              Special pages
+                                          </p>
+                                          <ul class="list_menu">
+                                              <li>
+                                                  3 Columns Details Grid Portfolio
+                                              </li>
+                                              <li>
+                                                  Fullscreen Grid Portfolio
+                                              </li>
+                                              <li>
+                                                  Portfolio Post with Video
+                                              </li>
+                                              <li>
+                                                  2 Columns Grid Blog with Left Sidebar
+                                              </li>
+                                              <li>
+                                                  3 Columns Grid Blog without Sidebar
+                                              </li>
+                                              <li>
+                                                  Blog Post with Right Sidebar
+                                              </li>
+                                              <li>
+                                                  Side Navigation Page
+                                              </li>
+                                              <li>
+                                                  About Page II
+                                              </li>
+                                              <li>
+                                                  Service Page I
+                                              </li>
+                                              <li>
+                                                  Pricing Page I
+                                              </li>
+                                              <li>
+                                                  Contact Page I
+                                              </li>
+                                          </ul>
+                                      </div>
+                                      <div class="box">
+                                          <p class="title_menu">
+                                              Latest works
+                                          </p>
+                                          <figure class="pictures">
+                                            <div class="menu_background">
+                                              <img src="images/menu_02.png">
+                                            </div>
+                                            <div class="menu_background">
+                                              <img src="images/menu_02.png">
+                                            </div>
+                                            <div class="menu_background">
+                                              <img src="images/menu_03.png">
+                                            </div>
+                                            <div class="menu_background">
+                                              <img src="images/menu_04.png">
+                                            </div>
+                                            <div class="menu_background">
+                                              <img src="images/menu_05.png">
+                                            </div>
+                                            <div class="menu_background">
+                                              <img src="images/menu_06.png">
+                                            </div>
+                                              
+                                          </figure>
+                                      </div>
+                                      <div class="box">
+                                          <p class="title_menu">
+                                              About us
+                                          </p>
+                                          <p class="small_lorem about_lorem">
+                                              Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.<br>
+                                              <br>
+Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.
+                                          </p>
+                                          <button class="read_more_btn">
+                                              READ MORE
+                                          </button>
+                                      </div>
+                            </div>
+                               </li>
+                               <li>
+                                   <a href="#">CONTACT</a>
+                               </li> 
+                                   <li>
+                                    <form>
+                                        <input type="text" class="search">
+                                        <a href="#">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </form>
+                                    </li>
+                           </ul>
+                           
+                    </div> 
+            </div>
+    <div class="static_buttons">
     <section class="slider">
-        <figure>
-            <a class="left_arrow" href="#">
-            </a>
-            <a class="right_arrow" href="#">
-            </a>
+        <div class="slider_01 slide">
+           <div class="slid_container">
+                <p class="title">
+                    MADE FOR DESIGNERS
+                </p>
+                <p class="caption">
+                    Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.
+                </p>
+                <button class="get_started">
+                </button>
+            </div>
+        </div>
+        <div class="slider_02 slide">
+            <div class="slid_container">
+                <p class="title">
+                    Fresh and
+                    <br>
+                    beautiful design
+                </p>
+                <p class="caption">
+                    REEN is designed to showcase your talent and put your work in the forefront.  Professionally use of typography and layout that fits your content.
+                </p>
+                <button class="get_started">
+                </button>
+            </div>
+        </div>
+        <div class="slider_03 slide">
+        <div class="slid_container">
+                <p class="title title_01">
+                    CLEAN AND
+                </p>
+                <br>
+                <p class="title title_02">
+                    REUSABLE CODE
+                </p>
+                <p class="caption">
+                    he clean code allows you to easily copy code blocks from content
+                    <br>
+                    modules and past them in different places or layouts.
+                </p>
+                <button class="get_started">
+                </button>
+         </div>
+        </div>
+        <div class="slider_04 slide">
+            <div class="slid_container">
+                <p class="title title_01">
+                    JUST FOCUS ON
+                </p>
+                <br>
+                <p class="title title_02">
+                    YOUR CREATIVITY
+                </p>
+                <p class="caption">
+                    Take a break from messing around with heavy coding and spend your 
+                    <br>
+                    time brainstorming ideas for your next project.
+                </p>
+                <button class="get_started">
+                </button>
+            </div>
+        </div>
+        <div class="slider_05 slide">
+            <div class="slid_container">
+                    <p class="title title_01">
+                        SHOWCASE
+                    </p>
+                    <p class="title title_02">
+                        YOUR CONTENT
+                    </p>
+                    <p class="caption">
+                        With REEN you have the possibility to create websites for various contents 
+                        <br>
+                        quickly and easily. Now it's up to you!
+                    </p>
+                    <button class="get_started">
+                    </button>
+                </div>
+        </div> 
+    </section>
+    <figure>
+            <button class="left_arrow" href="#" onclick="left_slide">
+            </button>
+            <button class="right_arrow" href="#" onClick="right_slide">
+            </button>
             <div class="pagination">
                 <a href="#">
                     <div class="pagi_size pagi_01">
@@ -115,7 +360,7 @@
                 </a>
             </div>
         </figure>
-    </section>
+    </div>
     <section class="about">
         <div class="who_we_are">
            <p>
@@ -206,10 +451,18 @@
                 </figcaption>
             </figure>
             <figure class="carousel">
-                <img src="images/carousel_01.png">
+               <div class="small_background"> 
+                    <img src="images/carousel_01.png">
+                </div>
+                    <div class="small_background">
                 <img src="images/carousel_02.png">
-                <img src="images/carousel_03.png">
-                <img src="images/carousel_04.png">
+                </div>
+                <div class="small_background">
+                    <img src="images/carousel_03.png">
+                </div>
+                <div class="small_background">
+                    <img src="images/carousel_04.png">
+                </div>
             </figure>
         </div>
     </section>
@@ -221,9 +474,9 @@
             Magnis modipsae que voloratati andigen daepeditem quiate re porem aut
             labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.
         </p>
-        <figure class="button_work">
-            <img class="button_work"src="images/button_getInTouch.png">
-        </figure>
+        <button class="button_get_in">
+            
+        </button>
     </section>
     <footer class="footer">
         <div class="footer_01">
@@ -232,9 +485,8 @@
                     <p class="footer_title">
                         Who we are
                     </p>
-                    <figure>
-                        <img class="logo_white" src="images/logo_white.png">
-                    </figure>
+                    <div class="logo_whitee">
+                    </div>
                     <p class="footer_discription">
                         Magnis modipsae voloratati andigen daepeditem
                         quiate re porem que aut labor. Laceaque
@@ -244,7 +496,8 @@
                     <p class="footer_discription about_bold">
                         <a href="#">
                             More about us
-                        </a>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a> 
                     </p>
                 </div>
                 <div class="late size_boxes">
@@ -252,13 +505,21 @@
                         Latest works
                     </p>
                     <figure class="small_last">
-                        <img src="images/small_last_01.png">
+                       <div class="small_last_background">
+                            <img src="images/small_last_01.png">
+                        </div>
+                        <div class="small_last_background">
                         <img src="images/small_last_02.png">
+                        </div>
+                        <div class="small_last_background">
                         <img src="images/small_last_03.png">
+                        </div>
+                        <div class="small_last_background">
                         <img src="images/small_last_04.png">
+                        </div>
                     </figure>
                 </div>
-                <div class="getIn size_boxes">
+                <div class="size_boxes">
                     <p class="footer_title">
                         Get in touch
                     </p>
@@ -267,15 +528,20 @@
                         oreprerum tibusam eumenis et consent
                         accullignis dentibea autem inisita.     
                     </p>
-                    <p class="localisation footer_discription">
+                    <a href="#" class="footer_discription">
+                       <i class="fa fa-map-marker" aria-hidden="true"></i>
                         84 Street, City, State 24813
-                    </p>
-                    <p class="phone footer_discription">
+                    </a>
+                    <br>
+                    <a href="#" class="footer_discription">
+                       <i class="fa fa-mobile" aria-hidden="true"></i>
                         +00 (123) 456 78 90
-                    </p>
-                    <p class="mail footer_discription">
+                    </a>
+                    <br>
+                    <a href="#"class="footer_discription">
+                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         info@reen.com
-                    </p>
+                    </a>
                 </div>
                 <div class="update size_boxes">
                     <p class="footer_title">
@@ -287,7 +553,8 @@
                     </p>
                     <form class="subscribe">
                         <input type="email" class="email_place" name="email" placeholder="Enter your email address">
-                        <input type="image" class="button_subscribe" src="images/button_subscribe.png" alt="subscribe button">
+                        <a href="#" class="button_subscribe">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -321,7 +588,6 @@
                 </nav>
             </div>
             <a href="#" class="up_arrow">
-                <img src="images/up_arrow.png">
             </a>
         </div>
     </footer>

@@ -11,27 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link rel="stylesheet" href="style/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-    
-    window.onscroll = function() {
-        var position;
-        var stick = document.getElementById('container');
-        position = window.pageYOffset;
-        if(position >= 40){
-            stick.style.boxShadow = "0px 5px 15px #e5e5e5";
-        }
-        else{
-            stick.style.boxShadow="0px 1px 0px #e6e9ed";
-        }
-    };
-    var slide = document.getElementsByClassName("slider");
-    var right_slide = function(){
-        slide.style.offsetLeft="-200%";
-    }
-    </script>
+   
 </head>
 <body>
+  <div class="modal" id="myModal">
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">
+               &times;
+            </span>
+            <img class="modal_content" id="img01" src="images/carousel_01.png">
+    </div>
    <header class="header">
        <div class="bg_social">
             <nav class="navbar_social">
@@ -79,11 +67,13 @@
            </header>
                <div class="container_sticky" id="container">
                     <div class="main_navbar"> 
-                            <a href="#" class="logo">
-                            </a>
-                           <ul>
+                            <ul class="main_menu"id="main_menu">
+                              <li>
+                                    <a href="#" class="logo">
+                                    </a>
+                              </li>
                                <li class="home_menu">
-                                   <a href="#">
+                                   <a  class="button_menu"href="#">
                                           HOME
                                     </a>
                                        <ul class="home">
@@ -125,20 +115,20 @@
                                        </ul>
                                </li>
                                <li>
-                                   <a href="#">PORTFOLIO</a>
+                                   <a class="button_menu" href="#">PORTFOLIO</a>
                                </li>
                                <li>
-                                   <a href="#">BLOG</a>
+                                   <a class="button_menu" href="#">BLOG</a>
                                </li>
                                <li>
-                                   <a href="#">PAGES</a>
+                                   <a class="button_menu" href="#">PAGES</a>
                                </li>
                                <li>
-                                   <a href="#">FEATURES</a>
+                                   <a class="button_menu" href="#">FEATURES</a>
                                </li>
                                
                                <li class="menu">
-                                   <a href="#">
+                                   <a class="button_menu" href="#">
                                        MEGA MENU
                                    </a> 
                                    <div class="mega_menu">
@@ -238,16 +228,16 @@ Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonse
                             </div>
                                </li>
                                <li>
-                                   <a href="#">CONTACT</a>
+                                   <a class="button_menu" href="#">CONTACT</a>
                                </li> 
-                                   <li>
-                                    <form>
-                                        <input type="text" class="search">
-                                        <a href="#">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                        </a>
-                                    </form>
-                                    </li>
+                               <li>
+                                <form class="search_box">
+                                    <input type="text" class="search">
+                                    <a class="button_menu" href="#">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                </form>
+                                </li>
                            </ul>
                            
                     </div> 
@@ -426,32 +416,34 @@ Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonse
                 Magnis modipsae que voloratati andigen daepeditem quiate
                 re porem aut labor.
             </p>
-            <figure class="first border_figcaption">
-               <div class="background">
-                    <img class="pictures" src="images/last_work_1.png" alt="our last work">
-                </div>
-                <figcaption>
-                    <p class="main_figcaption">
-                        Grand Motel gets an identity brushup
-                    </p>
-                    <p class="small_figcaption">
-                        Identity
-                    </p>
-                </figcaption>
-            </figure>
-            <figure class="border_figcaption">
-                <div class="background">
-                    <img class="pictures" src="images/last_work_2.png" alt="our second last work">
-                </div>
-                <figcaption>
-                   <p class="main_figcaption">
-                       Fresh branding for a creative startup
-                   </p>
-                   <p class="small_figcaption">
-                       Identity
-                   </p>   
-                </figcaption>
-            </figure>
+            <div class="container_latest">
+                <figure class="first border_figcaption">
+                   <div class="background">
+                        <img class="pictures" src="images/last_work_1.png"  alt="our last work" id="myImg" onclick="change()">
+                    </div>
+                    <figcaption>
+                        <p class="main_figcaption">
+                            Grand Motel gets an identity brushup
+                        </p>
+                        <p class="small_figcaption">
+                            Identity
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="border_figcaption">
+                    <div class="background">
+                        <img class="pictures" src="images/last_work_2.png" alt="our second last work" id="myImg" onclick="change()" >
+                    </div>
+                    <figcaption>
+                       <p class="main_figcaption">
+                           Fresh branding for a creative startup
+                       </p>
+                       <p class="small_figcaption">
+                           Identity
+                       </p>   
+                    </figcaption>
+                </figure>
+            </div>
             <figure class="carousel">
                <div class="small_background"> 
                     <img src="images/carousel_01.png">
@@ -593,5 +585,6 @@ Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonse
             </a>
         </div>
     </footer>
+    <script language="javascript" src="js/main.js"></script>
 </body>
 </html>
